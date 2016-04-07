@@ -2,77 +2,61 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Philosopher'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Kaushan+Script' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+        <script src="index.js"></script>
         <title> My first steps in Web </title>
     </head>
     <body>
-        <section>
-            <header>
-    <h1 >Hi, there!!!</h1>
-    <img src="" alt="my photo" height="60" width="60">
-    <p>My name is Uliana Kovtuniak, I'm Junior front-end developer. This website is the first version of my online portfolio (and I hope not the last).</p>
-            </header>
-        </section>
-        <nav>
-        <ul type="none">
-        <li><a href="/Home/">Home</a></li>
-        <li><a href="/Education/">Education</a></li>
-        <li><a href="/Skills/">Skills</a></li>
-        <li><a href="/Get in touch/">Get in touch</a></li>
-        </ul>
-    </nav>
-        <section>
-            <header>
-                <h1>Education</h1>
-            </header>
-        </section>
-        <section>
-    <img src="econom.jpg" alt="Econom">
-    <h6>Chernivtsi national university named after Yuriy Fedkovych<br>
-    <strong>Specialty:</strong> Finance and Credit, the Degree of Master</h6>
-    <img src="ss.png" alt="SoftServe">
-    <h6>Softserve Academy <br>HTML5/ CSS3/ JavaScript Fundamentals</h6>
-        </section>
-        <section>
-            <header>
-    <h1>Skills</h1>
-            </header>
-            <table>
-                <tr>
-                    <td>
-                        <img src="" alt="HTML" height="50" width="50">
-                    </td>
-                    <td>
-                        <img src="" alt="CSS" height="50" width="50">
-                    </td>
-                    <td>
-                        <img src="" alt="JavaScript" height="50" width="50">
-                    </td>
-                    <td>
-                        <img src="" alt="1C" height="50" width="50">
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <header>
-                <h2>Language skills</h2>
-            </header>
-            <ul type="circle">
-                <li> Ukrainian</li>
-                <li>English</li>
-                <li>Polish</li>
-            </ul>
-        </section>
-        <section>
-            <p> The Future depends on what we do in the Present<br>
+        <div class="container">
+            <div class="header">
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="#home" onclick="openNav('home')">Home</a></li>
+                        <li><a href="#education" onclick="openNav('education')">Education</a></li>
+                        <li><a href="#skills" onclick="openNav('skills')">Skills</a></li>
+                        <li><a href="#get-in-touch" onclick="openNav('get-in-touch')">Get in touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="home" class="nav" style="display:block">
+                <div class="intro-left">
+                    <div class="intro-content">
+                        <h1 >Hi, there!!!</h1>
+                       <img class="intro-img" src="images/me.jpg" alt="my photo">
+                        <p>My name is Uliana Kovtuniak, I'm Junior front-end developer. This website is the first version of my online portfolio (and I hope not the last).</p> 
+                    </div> 
+                </div>
+                <div class="intro-right"></div>
+            </div>
+            <div class="content">
+                <div id="education" class="nav" style="display:none" >
+                    <h1>Education</h1>
+                    <img class="ec-img" src="images/econom.jpg" alt="Econom">
+                    <h5 class="chnu">Chernivtsi national university named after Yuriy Fedkovych<br>
+                    <strong>Specialty:</strong> Finance and Credit, the Degree of Master</h5>
+            <img class="ss-img" src="images/ss.png"alt="SoftServe">
+            <h5 class="ss">Softserve Academy: <br>HTML5/ CSS3/ JavaScript Fundamentals</h5>
+                </div>
+                <div id="skills" class="nav" style="display:none">
+                    <h1>Skills</h1>
+                        <img src="images/html5.png" alt="HTML" height="50" width="50">
+                        <img src="images/css3.png" alt="CSS" height="50" width="50">
+                        <img src="images/js.png" alt="JavaScript" height="50" width="50">
+                        <img src="images/1c.png" alt="1C" height="50" width="50">
+                    <h2>Language skills</h2>
+            
+                </div>
+                <div id="get-in-touch" class="nav" style="display:none">
+                    <p> The Future depends on what we do in the Present<br>
             Mahatma Gandhi</p>
-        </section>
-        <section>
-            <form id="contact" action="" method="post">
-            <fieldset>
+                <form id="contact" action="" method="post">
+                <fieldset>
                 <legend><strong> Get in touch</strong></legend>
                 <label for="name">Name:</label>
-                <input type="text" name="name" required placeholder="First name" autofocus/>
+                <input type="text" name="name" required placeholder="First name">
                 <br>
                 <br>
                 <label for="email">E-mail:</label>
@@ -84,8 +68,6 @@
                 <br>
                 <button type="submit" name="submit" value="Send"><strong>Send</strong></button>
             </fieldset>
-        </section>
-        <section>
             <table>
                 <tr>
                     <td>
@@ -99,7 +81,9 @@
                     </td>
                 </tr>
             </table>
-        </section>
-        <footer><p>Create with love by Uliana Kovtuniak <br> <time datetime="03-2016">March, 2016</time></p></footer>
+                </div>
+            </div>
+            <div class="footer"><p>Create with <span class="heart">&#x2665</span>by Uliana Kovtuniak<time datetime="03-2016"> April, 2016</time></</div>
+        </div>
     </body>
 </html>
