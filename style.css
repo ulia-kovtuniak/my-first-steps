@@ -3,7 +3,7 @@ body {
     background: url("images/invite.jpg");
     background-repeat: no-repeat;
     background-size:1370px 700px;
-    max-width: 1920px;
+    height: 100%;
 }
 ul {
     list-style-type: none;
@@ -29,62 +29,49 @@ li a:hover {
     background-color: #111;
 }
 .intro-img {
-    margin-left: 15%;
-    max-height: 35%;
-    max-width: 35%;
-    min-height: 20%;
-    min-width: 20%;
+    margin-left: 21%;
+    width: 190px;
+    height: 150px;
     box-shadow:0 0 50px #999;
-    animation-name: img;
-    animation-duration: 2s;
-}
-@keyframes img {
-    from {
-        margin-top: 20px;
-        margin-left: 50%;
-        transform: scale(0.1);
-    }
-    to {
-        margin-top: 0%;
-        margin-left: 15%;
-        transform: scale(1.0);
-    }
 }
 .intro-content p {
     font-family: Kaushan Script, cursive; 
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     text-shadow: 4px 4px 4px #99ff99;
     margin-left: 20px;
 }
-.nav {
+.intro-left {
+    margin-bottom: 3%;
     animation-name: door;
     animation-duration: 2s;
 }
+@keyframes door {
+    from {
+        margin-top: 23px; 
+        margin-left: 55%;
+        transform: scale(0.1);
+    }
+    to {
+        margin-top: 0%;
+        margin-left: 0%;
+        transform: scale(1.0);
+    }
+}
 p::first-letter {
-    font-size: 1.5em; 
     font-weight: normal;
     margin-left: 35px;
 }
 .intro-left {
     float: left;
-    width: 50%;
-    }
-.intro-right {
-    float: right;
-    width: 50%;
-   }
-.content {
-    position: relative;
-    clear: both;
-    width: 100%;
-    height: 100%;
-    }
+    max-width: 500px;
+}
 .footer {
     position: relative;
     clear: both;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    margin: 0% auto;
+    bottom: 0%;
+    margin-bottom: 0%;
     font-family: Kaushan Script, cursive;
     font-size: 18px;
     color: white;
@@ -94,12 +81,21 @@ p::first-letter {
 .heart {
 	font-size: 20px;
 	color: #e00;
-	animation: beat .25s infinite alternate;
-	transform-origin: center;
 }
-@keyframes door {
+h1 {
+    font-family: Kaushan Script, cursive;
+    font-size: 40px;
+    color: white;
+    text-shadow: 4px 4px 4px #99ff99;
+    margin-left: 75px;
+}
+#education {
+    animation-name: doored;
+    animation-duration: 2s;
+}
+@keyframes doored {
     from {
-        margin-top: 20px;
+        margin-top: 3%; 
         margin-left: 50%;
         transform: scale(0.1);
     }
@@ -109,19 +105,12 @@ p::first-letter {
         transform: scale(1.0);
     }
 }
-h1 {
-    font-family: Philosopher, serif;
-    font-size: 40px;
-    color: white;
-    text-shadow: 4px 4px 4px #99ff99;
-    margin-top: 25px;
-    margin-left: 120px;
-}
 .ec-img {
     margin-left: 4%;
     border-radius: 25%;
     float: left;
     margin-right: 1%;
+    box-shadow:0 0 50px #999
 }
 .chnu {
     clear: right;
@@ -133,15 +122,16 @@ h1 {
 }
 .ss-img {
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 110px;
+    left: 133px;
     margin-right: 0px;
     border-radius: 15%;
+    box-shadow:0 0 50px #999
 }
 .ss {
     margin-left: 20px;
-    margin-bottom: 75px;
-    max-width: 19%;
+    margin-bottom: 100px;
+    max-width:120px;
     font-family: Kaushan Script, cursive; 
     font-size: 15px;
     color: white;
@@ -154,6 +144,14 @@ fieldset {
 	padding-bottom: 2px;
 	width: 250px;
 	margin-left: 10%;
+}
+fieldset:hover {
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+fieldset {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
 }
 .gt {
     margin-left: 11%;
@@ -213,7 +211,98 @@ textarea[type=text], select {
     height:35px;
     width:35px;
     margin-left:5%;
+    margin-top: 2%;
 }
 #facebook {
     margin-left:11%;
+}
+#get-in-touch {
+    animation-name: doorsk;
+    animation-duration: 2s;
+    margin-bottom: 2%;
+}
+.myhtml img {
+    float: left;
+    margin-left: 1.5%;
+    height: 60px;
+    width: 60px;
+}
+.myhtml img:hover {
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+.myhtml img, .mycss img, .myjs img {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+.mycss img {
+    float: left;
+    margin-left: 1.5%;
+    height: 60px;
+    width: 60px;
+}
+.mycss img:hover {
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+.myjs img {
+    float: left;
+    margin-left: 1.5%;
+    height: 60px;
+    width: 60px;
+}
+.myjs img:hover {
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+.myhtml p {
+    font-family: Kaushan Script, cursive; 
+    font-size: 18px;
+    color: white;
+    text-shadow: 4px 4px 4px #000410;
+}
+.mycss p {
+    font-family: Kaushan Script, cursive; 
+    font-size: 18px;
+    color: white;
+    text-shadow: 4px 4px 4px #000410;
+}
+.myjs p {
+    font-family: Kaushan Script, cursive; 
+    font-size: 18px;
+    color: white;
+    text-shadow: 4px 4px 4px #000410;
+}
+h2 {
+    clear: both;
+    margin-top: 1%;
+    font-family: Kaushan Script, cursive; 
+    font-size: 32px;
+    color: white;
+    text-shadow: 4px 4px 4px  #99ff99;
+    margin-left: 4%;
+}
+article {
+    margin-left: 2%;
+    font-family: Kaushan Script, cursive; 
+    font-size: 18px;
+    color: white;
+    text-shadow: 4px 4px 4px #000410;
+}
+#skills {
+    animation-name: doorsk;
+    animation-duration: 2s;
+    margin-bottom: 3%;
+}
+@keyframes doorsk {
+    from {
+        margin-top: 0%; 
+        margin-left: 50%;
+        transform: scale(0.1);
+    }
+    to {
+        margin-top: 0%;
+        margin-left: 0%;
+        transform: scale(1.0);
+    }
 }
